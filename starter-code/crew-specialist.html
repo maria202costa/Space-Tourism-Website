@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="styles/crew.css" />
+  </head>
+  <body>
+    <section class="crew-section">
+      <nav class="crew-section__navbar">
+        <div class="crew-section__navbar__logo">
+          <img
+            src="/starter-code/assets/shared/logo.svg"
+            alt="Logo of the Torism Website page"
+            class="crew-section__navbar__logo__img"
+          />
+          <p class="crew-section__navbar__logo__line"></p>
+        </div>
+
+        <button class="crew-section__navbar__button" id="openMenuC">
+          <img
+            src="/starter-code/assets/shared/icon-hamburger.svg"
+            alt="Open menu button"
+          />
+        </button>
+
+        <div class="crew-section__navbar__navigation">
+          <a href="index.html" class="crew-section__navbar__navigation__a"
+            ><b>00</b> Home</a
+          >
+          <a
+            href="destination-moon.html"
+            class="crew-section__navbar__navigation__a"
+            ><b>01</b> Destination</a
+          >
+          <a
+            href="#"
+            class="crew-section__navbar__navigation__a --active-state-nav"
+            ><b>02</b> Crew</a
+          >
+          <a
+            href="technology-vehicle.html"
+            class="crew-section__navbar__navigation__a"
+            ><b>03</b> Technology</a
+          >
+        </div>
+      </nav>
+
+      <div class="crew-section__menu">
+        <div class="crew-section__menu__button">
+          <button class="crew-section__menu__button__btn" id="closeMenuD">
+            <img
+              src="/starter-code/assets/shared/icon-close.svg"
+              alt="Close menu button"
+            />
+          </button>
+        </div>
+        <div class="crew-section__menu__links">
+          <a href="index.html" class="crew-section__menu__links__a"
+            ><b>00</b> Home</a
+          >
+          <a href="destination-moon.html" class="crew-section__menu__links__a"
+            ><b>01</b> Destination</a
+          >
+          <a href="#" class="crew-section__menu__links__a --active-state-menu"
+            ><b>02</b> Crew</a
+          >
+          <a href="technology-vehicle.html" class="crew-section__menu__links__a"
+            ><b>03</b> Technology</a
+          >
+        </div>
+      </div>
+
+      <main class="crew-section__main">
+        <div class="crew-section__main__hero">
+          <p class="crew-section__main__hero__intro">
+            <b>02</b> Meet your crew
+          </p>
+
+          <div class="crew-section__main__hero__content">
+            <div class="crew-section__main__hero__content__info">
+              <div
+                class="crew-section__main__hero__content__info__texts--extra"
+              >
+                <h2
+                  class="crew-section__main__hero__content__info__texts__subtitle"
+                >
+                  Mission Specialist
+                </h2>
+                <h1
+                  class="crew-section__main__hero__content__info__texts__title"
+                >
+                  Mark Shuttleworth
+                </h1>
+                <p
+                  class="crew-section__main__hero__content__info__texts__paragraph"
+                >
+                  Mark Richard Shuttleworth is the founder and CEO of Canonical,
+                  the company behind the Linux-based Ubuntu operating system.
+                  Shuttleworth became the first South African to travel to space
+                  as a space tourist.
+                </p>
+              </div>
+
+              <div class="crew-section__main__hero__content__info__options">
+                <a
+                  href="/starter-code/crew-commander.html"
+                  class="crew-section__main__hero__content__info__options__button"
+                ></a>
+
+                <a
+                  href="#"
+                  class="crew-section__main__hero__content__info__options__button --active-state-btn"
+                ></a>
+
+                <a
+                  href="/starter-code/crew-pilot.html"
+                  class="crew-section__main__hero__content__info__options__button"
+                ></a>
+
+                <a
+                  href="/starter-code/crew-engineer.html"
+                  class="crew-section__main__hero__content__info__options__button"
+                ></a>
+              </div>
+            </div>
+
+            <div class="crew-section__main__hero__content__img">
+              <img
+                src="/starter-code/assets/crew/image-mark-shuttleworth.png"
+                alt="A png image of the Mission Specialist"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="scripts/crew.js"></script>
+  </body>
+</html>

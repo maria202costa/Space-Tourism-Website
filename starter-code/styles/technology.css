@@ -1,0 +1,816 @@
+/*This is for the technology pages*/
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+/*
+font-family: "Bellefair", serif;
+font-family: "Barlow Condensed", sans-serif;
+font-family: "Barlow", sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tech-section {
+  width: 100vw;
+  height: 1024px;
+  background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+}
+
+/*Navbar*/
+.tech-section__navbar {
+  display: flex;
+  gap: -32px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  width: 100vw;
+  height: 136px;
+}
+
+.tech-section__navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: 736px;
+  height: 48px;
+  padding-left: 64px;
+
+  & .tech-section__navbar__logo__img {
+    width: 48px;
+    height: 48px;
+  }
+
+  & .tech-section__navbar__logo__line {
+    width: 560px;
+    height: 1px;
+    background-color: white;
+    opacity: 25%;
+  }
+}
+
+.tech-section__navbar__button {
+  display: none;
+}
+
+.tech-section__menu {
+  display: none;
+}
+
+.tech-section__navbar__navigation {
+  width: 736px;
+  height: 96px;
+  display: flex;
+  gap: 48px;
+  justify-content: right;
+  align-items: center;
+  padding: 0px 64px 0px 64px;
+  background-color: rgba(255, 255, 255, 5%);
+  backdrop-filter: blur(30px);
+}
+
+.tech-section__navbar__navigation__a {
+  opacity: 1;
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255);
+  height: 96px;
+}
+
+.tech-section__navbar__navigation__a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.--active-state-nav,
+.--active-state-nav:hover {
+  border-bottom: 3px solid rgba(255, 255, 255);
+}
+
+/*Hero Section*/
+.tech-section__main {
+  width: 100vw;
+  height: 888px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.tech-section__main__hero {
+  width: 1275px;
+  height: 792px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tech-section__main__hero__intro {
+  width: 295px;
+  height: 34px;
+  display: flex;
+  gap: 24px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 28px;
+
+  & b {
+    opacity: 25%;
+  }
+}
+
+.tech-section__main__hero__content {
+  width: 100%;
+  height: 734px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.tech-section__main__hero__content__img--mob {
+  display: none;
+}
+
+.tech-section__main__hero__content__pagination {
+  width: 645px;
+  height: 304px;
+  display: flex;
+  gap: 64px;
+}
+
+.tech-section__main__hero__content__pagination__buttons {
+  width: 80px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.tech-section__main__hero__content__pagination__buttons__a {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  text-decoration: none;
+  font-weight: 400;
+  background-color: transparent;
+  color: rgba(255, 255, 255);
+  font-size: 32px;
+  animation: buttonsSlide 1s linear;
+}
+
+.tech-section__main__hero__content__pagination__buttons__a:hover {
+  border: 1px solid rgba(255, 255, 255);
+  transition: 0.5s linear;
+  transform: translate(-10px);
+}
+
+.--active-state-a,
+.--active-state-a:hover {
+  background-color: rgba(255, 255, 255);
+  color: rgba(11, 14, 23);
+  border: none;
+}
+
+.tech-section__main__hero__content__pagination__info {
+  width: 491px;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tech-section__main__hero__content__pagination__info__titles {
+  width: 100%;
+  height: 117px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: textsShown 2s linear;
+}
+
+.tech-section__main__hero__content__pagination__info__titles__subtitle {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 50.42%);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.tech-section__main__hero__content__pagination__info__titles__title {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255);
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+.tech-section__main__hero__content__pagination__info__paragraph {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: rgba(208, 214, 249);
+  line-height: 180%;
+  font-size: 18px;
+}
+
+.tech-section__main__hero__content__img {
+  width: 608px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: textsShown 2s linear;
+
+  & img {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@keyframes buttonsSlide {
+  0% {
+    transform: translate(-40px, 0px);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes textsShown {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*Media Queries*/
+@media (max-width: 2560px) {
+  .tech-section__main {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1441px) {
+  .tech-section__main {
+    justify-content: right;
+  }
+}
+
+@media (max-width: 1025px) {
+  .tech-section {
+    width: 100vw;
+    height: 1024px;
+    background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+    background-size: cover;
+  }
+
+  /*Navbar*/
+  .tech-section__navbar {
+    padding-top: 0px;
+    width: 100vw;
+    height: 96px;
+  }
+
+  .tech-section__navbar__logo {
+    gap: 0px;
+    width: 160px;
+    padding-left: 40px;
+
+    & .tech-section__navbar__logo__line {
+      display: none;
+    }
+  }
+
+  /*Hero Section*/
+  .tech-section__main {
+    width: 100vw;
+    height: 928px;
+    justify-content: center;
+  }
+
+  .tech-section__main__hero {
+    width: 944px;
+    height: 848px;
+  }
+
+  .tech-section__main__hero__intro {
+    width: 100%;
+    height: 24px;
+    font-size: 20px;
+    letter-spacing: 15%;
+  }
+
+  .tech-section__main__hero__content {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-section__main__hero__content__img--mob {
+    display: flex;
+    width: 100%;
+    height: 421px;
+    align-items: end;
+
+    & .tech-section__main__hero__content__img--mob__background1 {
+      background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 1024px;
+      height: 357px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background2 {
+      background-image: url(/starter-code/assets/technology/image-spaceport-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 1024px;
+      height: 357px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background3 {
+      background-image: url(/starter-code/assets/technology/image-space-capsule-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 1024px;
+      height: 357px;
+    }
+  }
+
+  .tech-section__main__hero__content__pagination {
+    width: 100%;
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .tech-section__main__hero__content__pagination__buttons {
+    width: 768px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .tech-section__main__hero__content__pagination__buttons__a {
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    animation: none;
+  }
+
+  .tech-section__main__hero__content__pagination__buttons__a:hover {
+    transform: translate(0px, -10px);
+  }
+
+  .tech-section__main__hero__content__pagination__info {
+    width: 768px;
+    height: 251px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles {
+    width: 100%;
+    height: 90px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles__subtitle {
+    font-size: 24px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles__title {
+    font-size: 40px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__paragraph {
+    font-size: 16px;
+  }
+
+  .tech-section__main__hero__content__img {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .tech-section {
+    width: 100vw;
+    height: 1024px;
+    background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+    background-size: cover;
+  }
+
+  /*Navbar*/
+  .tech-section__navbar {
+    width: 100vw;
+  }
+
+  /*Hero Section*/
+  .tech-section__main {
+    width: 100vw;
+  }
+
+  .tech-section__main__hero {
+    width: 688px; /**/
+    height: 848px;
+  }
+
+  .tech-section__main__hero__intro {
+    width: 100%;
+  }
+
+  .tech-section__main__hero__content {
+    width: 100%;
+  }
+
+  .tech-section__main__hero__content__img--mob {
+    width: 100%;
+
+    & .tech-section__main__hero__content__img--mob__background1 {
+      background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 768px;
+      height: 357px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background2 {
+      background-image: url(/starter-code/assets/technology/image-spaceport-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 768px;
+      height: 357px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background3 {
+      background-image: url(/starter-code/assets/technology/image-space-capsule-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 768px;
+      height: 357px;
+    }
+  }
+
+  .tech-section__main__hero__content__pagination {
+    width: 100%;
+  }
+
+  .tech-section__main__hero__content__pagination__buttons {
+    width: 512px; /**/
+  }
+
+  .tech-section__main__hero__content__pagination__info {
+    width: 512px; /**/
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles {
+    width: 100%;
+    height: 90px;
+  }
+}
+
+@media (max-width: 426px) {
+  .tech-section {
+    width: 100vw;
+    height: 880px;
+    background-image: url(/starter-code/assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+  }
+
+  /*Navbar*/
+  .tech-section__navbar {
+    gap: 0px;
+    padding-top: 0px;
+    width: 100vw;
+    height: 88px;
+  }
+
+  .tech-section__navbar__logo {
+    gap: 0px;
+    width: 187.5px;
+    height: 40px;
+    padding-left: 24px;
+
+    & .tech-section__navbar__logo__img {
+      width: 40px;
+      height: 40px;
+    }
+
+    & .tech-section__navbar__logo__line {
+      display: none;
+    }
+  }
+
+  .tech-section__navbar__navigation {
+    display: none;
+  }
+
+  .tech-section__navbar__button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    padding-right: 24px;
+  }
+
+  /*Mobile Menu*/
+  .tech-section__menu {
+    display: none;
+    flex-direction: column;
+    gap: 48px;
+    margin-left: 170px;
+    position: absolute;
+    z-index: 1;
+    width: 254px;
+    height: 880px;
+    background-color: rgba(255, 255, 255, 5%);
+    backdrop-filter: blur(30px);
+    transform: translate(0px, -88px);
+  }
+
+  .tech-section__menu__button {
+    width: 222px;
+    height: 85px;
+    margin-left: 13px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .tech-section__menu__button__btn {
+    width: 24px;
+    height: 21px;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .tech-section__menu__links {
+    width: 222px;
+    height: 172px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .tech-section__menu__links__a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .--active-state-menu {
+    border-right: 4px solid white;
+  }
+
+  /*Hero Section*/
+  .tech-section__main {
+    width: 100vw;
+    height: 792px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tech-section__main__hero {
+    width: 377px;
+    height: 720px;
+  }
+
+  .tech-section__main__hero__intro {
+    width: 100%;
+    height: 19px;
+    letter-spacing: 15%;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .tech-section__main__hero__content {
+    width: 100%;
+    height: 677px;
+    flex-direction: column;
+  }
+
+  .tech-section__main__hero__content__img--mob {
+    width: 100%;
+
+    & .tech-section__main__hero__content__img--mob__background1 {
+      background-image: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 425px;
+      height: 322px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background2 {
+      background-image: url(/starter-code/assets/technology/image-spaceport-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 425px;
+      height: 322px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background3 {
+      background-image: url(/starter-code/assets/technology/image-space-capsule-portrait.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 425px;
+      height: 322px;
+    }
+  }
+
+  .tech-section__main__hero__content__pagination {
+    width: 100%;
+    height: 323px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tech-section__main__hero__content__pagination__buttons {
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .tech-section__main__hero__content__pagination__buttons__a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    animation: none;
+  }
+
+  .tech-section__main__hero__content__pagination__info {
+    width: 100%;
+    height: 243px;
+    gap: 16px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles {
+    width: 100%;
+    height: 65px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles__subtitle {
+    font-size: 18px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles__title {
+    font-size: 24px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__paragraph {
+    font-size: 15px;
+  }
+
+  .tech-section__main__hero__content__img {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .tech-section {
+    width: 100vw;
+    height: 880px;
+    background-image: url(/starter-code/assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+  }
+
+  /*Mobile Menu*/
+  .tech-section__menu {
+    margin-left: 120px; /**/
+  }
+
+  /*Hero Section*/
+  .tech-section__main {
+    width: 100vw;
+  }
+
+  .tech-section__main__hero {
+    width: 327px; /**/
+    height: 720px;
+  }
+
+  .tech-section__main__hero__content__img--mob {
+    width: 100%;
+
+    & .tech-section__main__hero__content__img--mob__background1 {
+      width: 375px; /**/
+    }
+
+    & .tech-section__main__hero__content__img--mob__background2 {
+      width: 375px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background3 {
+      width: 375px;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .tech-section {
+    width: 100vw;
+    height: 880px;
+    background-image: url(/starter-code/assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+  }
+
+  /*Navbar*/
+  .tech-section__navbar {
+    width: 100vw;
+  }
+
+  /*Mobile Menu*/
+  .tech-section__menu {
+    margin-left: 100px;
+    width: 220px;
+  }
+
+  .tech-section__menu__button {
+    width: 200px;
+    margin-left: 0px;
+  }
+
+  .tech-section__menu__button__btn {
+    width: 24px;
+    height: 21px;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .tech-section__menu__links {
+    width: 188px;
+  }
+
+  /*Hero Section*/
+  .tech-section__main {
+    width: 100vw;
+  }
+
+  .tech-section__main__hero {
+    width: 272px;
+    height: 720px;
+  }
+
+  .tech-section__main__hero__content__img--mob {
+    width: 100%;
+
+    & .tech-section__main__hero__content__img--mob__background1 {
+      width: 320px;
+      height: 322px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background2 {
+      width: 320px;
+      height: 322px;
+    }
+
+    & .tech-section__main__hero__content__img--mob__background3 {
+      width: 320px;
+      height: 322px;
+    }
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles__subtitle {
+    font-size: 15px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__titles__title {
+    font-size: 20px;
+  }
+
+  .tech-section__main__hero__content__pagination__info__paragraph {
+    font-size: 12px;
+  }
+}

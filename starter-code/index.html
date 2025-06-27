@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/starter-code/styles/index.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="home-section">
+      <nav class="home-section__navbar">
+        <div class="home-section__navbar__logo">
+          <img
+            src="/starter-code/assets/shared/logo.svg"
+            alt="Logo of the Torism Website page"
+            class="home-section__navbar__logo__img"
+          />
+          <p class="home-section__navbar__logo__line"></p>
+        </div>
+
+        <button class="home-section__navbar__button" id="openMenuHome">
+          <img
+            src="/starter-code/assets/shared/icon-hamburger.svg"
+            alt="Open menu button"
+          />
+        </button>
+
+        <div class="home-section__navbar__navigation">
+          <a
+            href="#"
+            class="home-section__navbar__navigation__a --active-state-nav"
+            ><b>00</b> Home</a
+          >
+          <a
+            href="destination-moon.html"
+            class="home-section__navbar__navigation__a"
+            ><b>01</b> Destination</a
+          >
+          <a
+            href="crew-commander.html"
+            class="home-section__navbar__navigation__a"
+            ><b>02</b> Crew</a
+          >
+          <a
+            href="technology-vehicle.html"
+            class="home-section__navbar__navigation__a"
+            ><b>03</b> Technology</a
+          >
+        </div>
+      </nav>
+
+      <div class="home-section__menu">
+        <div class="home-section__menu__button">
+          <button class="home-section__menu__button__btn" id="closeMenuHome">
+            <img
+              src="/starter-code/assets/shared/icon-close.svg"
+              alt="Close menu button"
+            />
+          </button>
+        </div>
+        <div class="home-section__menu__links">
+          <a href="#" class="home-section__menu__links__a --active-state-menu"
+            ><b>00</b> Home</a
+          >
+          <a href="destination-moon.html" class="home-section__menu__links__a"
+            ><b>01</b> Destination</a
+          >
+          <a href="crew-commander.html" class="home-section__menu__links__a"
+            ><b>02</b> Crew</a
+          >
+          <a href="technology-vehicle.html" class="home-section__menu__links__a"
+            ><b>03</b> Technology</a
+          >
+        </div>
+      </div>
+
+      <main class="home-section__main">
+        <div class="home-section__main__hero">
+          <h2 class="home-section__main__hero__subtitle">
+            So, you want to travel to
+          </h2>
+          <h1 class="home-section__main__hero__title">Space</h1>
+          <p class="home-section__main__hero__paragraph">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div class="home-section__main__button">
+          <!--for the hover state-->
+          <button class="home-section__main__button__btn">
+            <button class="home-section__main__button__btn--hover">
+              Explore
+            </button>
+          </button>
+        </div>
+      </main>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

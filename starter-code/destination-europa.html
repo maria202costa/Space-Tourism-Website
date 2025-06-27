@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="styles/destinations.css" />
+  </head>
+  <body>
+    <section class="destination-section">
+      <nav class="destination-section__navbar">
+        <div class="destination-section__navbar__logo">
+          <img
+            src="/starter-code/assets/shared/logo.svg"
+            alt="Logo of the Torism Website page"
+            class="destination-section__navbar__logo__img"
+          />
+          <p class="destination-section__navbar__logo__line"></p>
+        </div>
+
+        <button class="destination-section__navbar__button" id="openMenuD">
+          <img
+            src="/starter-code/assets/shared/icon-hamburger.svg"
+            alt="Open menu button"
+          />
+        </button>
+
+        <div class="destination-section__navbar__navigation">
+          <a
+            href="index.html"
+            class="destination-section__navbar__navigation__a"
+            ><b>00</b> Home</a
+          >
+          <a
+            href="#"
+            class="destination-section__navbar__navigation__a --active-state-nav"
+            ><b>01</b> Destination</a
+          >
+          <a
+            href="crew-commander.html"
+            class="destination-section__navbar__navigation__a"
+            ><b>02</b> Crew</a
+          >
+          <a
+            href="technology-vehicle.html"
+            class="destination-section__navbar__navigation__a"
+            ><b>03</b> Technology</a
+          >
+        </div>
+      </nav>
+
+      <div class="destination-section__menu">
+        <div class="destination-section__menu__button">
+          <button
+            class="destination-section__menu__button__btn"
+            id="closeMenuD"
+          >
+            <img
+              src="/starter-code/assets/shared/icon-close.svg"
+              alt="Close menu button"
+            />
+          </button>
+        </div>
+        <div class="destination-section__menu__links">
+          <a href="index.html" class="destination-section__menu__links__a"
+            ><b>00</b> Home</a
+          >
+          <a
+            href="#"
+            class="destination-section__menu__links__a --active-state-menu"
+            ><b>01</b> Destination</a
+          >
+          <a
+            href="crew-commander.html"
+            class="destination-section__menu__links__a"
+            ><b>02</b> Crew</a
+          >
+          <a
+            href="technology-vehicle.html"
+            class="destination-section__menu__links__a"
+            ><b>03</b> Technology</a
+          >
+        </div>
+      </div>
+
+      <main class="destination-section__main">
+        <div class="destination-section__main__hero">
+          <p class="destination-section__main__hero__intro">
+            <b>01</b> Pick your destination
+          </p>
+
+          <div class="destination-section__main__hero__content">
+            <div class="destination-section__main__hero__content1__image">
+              <img
+                src="/starter-code/assets/destination/image-europa.png"
+                alt="A Europa image"
+              />
+            </div>
+
+            <div class="destination-section__main__hero__content2">
+              <div class="destination-section__main__hero__content2__info">
+                <nav
+                  class="destination-section__main__hero__content2__info__navbar"
+                >
+                  <a
+                    href="/starter-code/destination-moon.html"
+                    class="destination-section__main__hero__content2__info__navbar__a"
+                    >Moon</a
+                  >
+                  <a
+                    href="/starter-code/destination-mars.html"
+                    class="destination-section__main__hero__content2__info__navbar__a"
+                    >Mars</a
+                  >
+                  <a
+                    href="#"
+                    class="destination-section__main__hero__content2__info__navbar__a --active-state-nav__dest"
+                    >Europa</a
+                  >
+                  <a
+                    href="/starter-code/destination-titan.html"
+                    class="destination-section__main__hero__content2__info__navbar__a"
+                    >Titan</a
+                  >
+                </nav>
+
+                <div
+                  class="destination-section__main__hero__content2__info__texts"
+                >
+                  <h1
+                    class="destination-section__main__hero__content2__info__texts__title"
+                  >
+                    Europa
+                  </h1>
+                  <p
+                    class="destination-section__main__hero__content2__info__texts__paragraph"
+                  >
+                    The smallest of the four Galilean moons orbiting Jupiter,
+                    Europa is a winter lover’s dream. With an icy surface, it’s
+                    perfect for a bit of ice skating, curling, hockey, or simple
+                    relaxation in your snug wintery cabin.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="destination-section__main__hero__content2__line"
+              ></div>
+
+              <div
+                class="destination-section__main__hero__content2__statistics"
+              >
+                <div
+                  class="destination-section__main__hero__content2__statistics__div1"
+                >
+                  <p
+                    class="destination-section__main__hero__content2__statistics__div1__text"
+                  >
+                    Avg. distance
+                  </p>
+                  <h2
+                    class="destination-section__main__hero__content2__statistics__div1__distance"
+                  >
+                    628 mil. km
+                  </h2>
+                </div>
+
+                <div
+                  class="destination-section__main__hero__content2__statistics__div2"
+                >
+                  <p
+                    class="destination-section__main__hero__content2__statistics__div2__text"
+                  >
+                    Est. travel time
+                  </p>
+                  <h2
+                    class="destination-section__main__hero__content2__statistics__div2__days"
+                  >
+                    3 years
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="scripts/destination.js"></script>
+  </body>
+</html>
